@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { getJokes } from "../jokeApi";
 import { Card, CardText } from "reactstrap";
+import appHeader from "./AppHeader";
 
 class JokePlay extends Component {
   constructor(props) {
@@ -43,6 +44,7 @@ class JokePlay extends Component {
     if (!isLoaded) {
       return (
         <div className="container-fluid">
+          {/* <appHeader /> */}
           <div className="row joketext">
             <div className="col-md-auto mr-auto">
               Just wait, we are loading a joke ...
