@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { getJokes } from "../jokeApi";
 import { Card, CardText } from "reactstrap";
-import appHeader from "./AppHeader";
+// import appHeader from "./AppHeader";
 
 class JokePlay extends Component {
   constructor(props) {
