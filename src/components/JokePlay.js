@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { getJokes, loadJokesFile } from "../jokeApi";
 import { Card, CardText } from "reactstrap";
 import { GenerateRND } from "./FileProcessing";
+import Share from "./Share";
 class JokePlay extends Component {
   constructor(props) {
     super(props);
@@ -28,7 +29,6 @@ class JokePlay extends Component {
       : this.loadAPIJoke();
 
     this.setState(prevState => ({
-      //  isLoaded: false
       isFileJokeNotAPI: !prevState.isFileJokeNotAPI
     }));
     console.log("File  " + this.state.isFileJokeNotAPI);
@@ -73,10 +73,11 @@ class JokePlay extends Component {
   }
 
   render() {
+    console.log(window.location.href);
     const { isLoaded } = this.state; //pass across the state
-    const jokeCount = this.state.jokeFile.length;
-    var fileOrAPI = this.state.isFileJokeNotAPI;
-
+    //  const jokeCount = this.state.jokeFile.length;
+    //  var fileOrAPI = this.state.isFileJokeNotAPI;
+    const URL = window.location.href;
     if (!isLoaded) {
       return (
         <div className="container-fluid">
@@ -111,7 +112,10 @@ class JokePlay extends Component {
                 return (
                   <div className="col col-md-3 col-sm-6  mx-auto " key={index}>
                     <Card className="cardBody">
-                      <CardText className="conditions ">{item}</CardText>
+                      <CardText className="conditions ">
+                        <Share Joke={item} URL={URL}></Share>
+                        {item}
+                      </CardText>
                     </Card>
                   </div>
                 );

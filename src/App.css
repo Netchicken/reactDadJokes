@@ -101,5 +101,13 @@ body {
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 .stopoverflow {
-    word-wrap: break-word;
+  word-wrap: break-word;
+}
+.Demo__some-network {
+  float: left;
+  vertical-align: top;
+  /* display: inline; */
+  margin-right: 5px;
+  text-align: center;
+  /* width: 40px; */
 }
