@@ -1,5 +1,5 @@
 //https://github.com/JOThurgood/modernReactBootcamp/tree/master/19-dad-jokes-app/dad-jokes/public
-
+import jokes from "../src/Assets/DadJokesJson.json";
 import axios from "axios";
 
 const JokeUri = "https://icanhazdadjoke.com/";
@@ -47,3 +47,9 @@ export async function getJokes() {
     //   return error;
     // });
  
+// import React, { Component } from "react";
+
+
+export async function loadJokesFile() {
+  return await jokes; //JSON.parse(dict);
+}
