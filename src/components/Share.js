@@ -6,6 +6,8 @@ import {
   EmailIcon
 } from "react-share";
 
+//https://www.npmjs.com/package/react-share
+
 class Share extends Component {
   //  console.log( this.props.URL)
   render() {
@@ -15,15 +17,17 @@ class Share extends Component {
           quote={this.props.Joke + " " + this.props.URL}
           className="Demo__some-network__share-button"
         >
-          <FacebookIcon size={16} round />
+          <FacebookIcon size={32} round />
         </FacebookShareButton>
 
         <EmailShareButton
-          body={"Another awful Dad joke from " + this.props.URL}
-          subject={this.props.Joke}
+          body={
+            this.props.Joke + "  Another awful Dad joke from " + this.props.URL
+          }
+          subject={"Another awful Dad Joke"}
           className="Demo__some-network__share-button"
         >
-          <EmailIcon size={16} round />
+          <EmailIcon size={32} round />
         </EmailShareButton>
       </span>
     );
