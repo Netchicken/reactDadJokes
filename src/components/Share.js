@@ -7,28 +7,25 @@ import {
 } from "react-share";
 
 class Share extends Component {
-  //   var { joke, URL  } = this.props; //pass across the state
+  //  console.log( this.props.URL)
   render() {
     return (
-              <span className="Demo__some-network">
-          <FacebookShareButton
-            url={this.props.URL}
-            quote={this.props.joke}
-            className="Demo__some-network__share-button"
-          >
-            <FacebookIcon size={16} round />
-          </FacebookShareButton>
+      <span className="Demo__some-network">
+        <FacebookShareButton
+          quote={this.props.Joke + " " + this.props.URL}
+          className="Demo__some-network__share-button"
+        >
+          <FacebookIcon size={16} round />
+        </FacebookShareButton>
 
-          <EmailShareButton
-            url={this.props.URL}
-            subject={this.props.joke}
-            body="body"
-            className="Demo__some-network__share-button"
-          >
-            <EmailIcon size={16} round />
-          </EmailShareButton>
-        </span>
-    
+        <EmailShareButton
+          body={"Another awful Dad joke from " + this.props.URL}
+          subject={this.props.Joke}
+          className="Demo__some-network__share-button"
+        >
+          <EmailIcon size={16} round />
+        </EmailShareButton>
+      </span>
     );
   }
 }
