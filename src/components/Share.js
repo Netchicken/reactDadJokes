@@ -7,14 +7,16 @@ import {
 } from "react-share";
 
 //https://www.npmjs.com/package/react-share
-
+//https://github.com/nygardk/react-share/blob/master/demo/Demo.jsx
 class Share extends Component {
-  //  console.log( this.props.URL)
   render() {
+    const siteURL = this.props.URL;
+    console.log("Share " + siteURL);
     return (
       <span className="Demo__some-network">
         <FacebookShareButton
-          quote={this.props.Joke + " " + this.props.URL}
+          quote={this.props.Joke}
+          url={siteURL}
           className="Demo__some-network__share-button"
         >
           <FacebookIcon size={32} round />
@@ -22,10 +24,14 @@ class Share extends Component {
 
         <EmailShareButton
           body={
-            this.props.Joke + "  Another awful Dad joke from " + this.props.URL
+            this.props.Joke +
+            " \r\n   \r\n" +
+            "Another awful Dad joke from" +
+            " \r\n "
           }
           subject={"Another awful Dad Joke"}
           className="Demo__some-network__share-button"
+          url={siteURL}
         >
           <EmailIcon size={32} round />
         </EmailShareButton>

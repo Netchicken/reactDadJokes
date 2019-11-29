@@ -75,9 +75,8 @@ class JokePlay extends Component {
   render() {
     console.log(window.location.href);
     const { isLoaded } = this.state; //pass across the state
-    //  const jokeCount = this.state.jokeFile.length;
-    //  var fileOrAPI = this.state.isFileJokeNotAPI;
-    const URL = window.location.href;
+    var URL = window.location.href;
+
     if (!isLoaded) {
       return (
         <div className="container-fluid">
@@ -105,21 +104,21 @@ class JokePlay extends Component {
             </div>
           </div>
           <div className="row">
-            {this.state.allJokes
-              .sort((a, b) => a.index - b.index)
-              .reverse()
-              .map((item, index) => {
-                return (
-                  <div className="col col-md-3 col-sm-6  mx-auto " key={index}>
-                    <Card className="cardBody">
-                      <CardText className="conditions ">
-                        <Share Joke={item} URL={URL}></Share>
-                        {item}
-                      </CardText>
-                    </Card>
-                  </div>
-                );
-              })}
+            {this.state.allJokes.reverse().map((item, index) => {
+              return (
+                <div
+                  className="col  col-12   col-sm-6  col-md-3 mx-auto "
+                  key={index}
+                >
+                  <Card className="cardBody">
+                    <CardText className="conditions ">
+                      <Share Joke={item} URL={URL}></Share>
+                      {item}
+                    </CardText>
+                  </Card>
+                </div>
+              );
+            })}
           </div>
         </div>
       );
