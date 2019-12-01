@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e1295ad7c3dd5ca734b16dcddffed954",
+    "revision": "7039def1ffe61ed14e53f3a99e2599ed",
     "url": "/reactDadJokes/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactDadJokes/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "f9b0f4503ccd3930b4bc",
-    "url": "/reactDadJokes/static/css/main.1104f4ec.chunk.css"
+    "revision": "38a17a63b06cbb253995",
+    "url": "/reactDadJokes/static/css/main.ad07408c.chunk.css"
   },
   {
     "revision": "95f029ffa00ebe9c3a1b",
     "url": "/reactDadJokes/static/js/2.9cfab172.chunk.js"
   },
   {
-    "revision": "f9b0f4503ccd3930b4bc",
-    "url": "/reactDadJokes/static/js/main.01861cfd.chunk.js"
+    "revision": "38a17a63b06cbb253995",
+    "url": "/reactDadJokes/static/js/main.cfd44c27.chunk.js"
   },
   {
     "revision": "125a160d73e9dfe81daa",
