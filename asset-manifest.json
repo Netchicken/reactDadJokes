@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/reactDadJokes/static/css/main.1104f4ec.chunk.css",
-    "main.js": "/reactDadJokes/static/js/main.56d2b060.chunk.js",
-    "main.js.map": "/reactDadJokes/static/js/main.56d2b060.chunk.js.map",
+    "main.js": "/reactDadJokes/static/js/main.01861cfd.chunk.js",
+    "main.js.map": "/reactDadJokes/static/js/main.01861cfd.chunk.js.map",
     "runtime-main.js": "/reactDadJokes/static/js/runtime-main.b29c98a8.js",
     "runtime-main.js.map": "/reactDadJokes/static/js/runtime-main.b29c98a8.js.map",
     "static/css/2.b0bb7f2c.chunk.css": "/reactDadJokes/static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.d5c62061.chunk.js": "/reactDadJokes/static/js/2.d5c62061.chunk.js",
-    "static/js/2.d5c62061.chunk.js.map": "/reactDadJokes/static/js/2.d5c62061.chunk.js.map",
+    "static/js/2.9cfab172.chunk.js": "/reactDadJokes/static/js/2.9cfab172.chunk.js",
+    "static/js/2.9cfab172.chunk.js.map": "/reactDadJokes/static/js/2.9cfab172.chunk.js.map",
     "index.html": "/reactDadJokes/index.html",
-    "precache-manifest.19646490860c511411870dd4793883ea.js": "/reactDadJokes/precache-manifest.19646490860c511411870dd4793883ea.js",
+    "precache-manifest.35c7d56b1acf7e46e5cddad781593abf.js": "/reactDadJokes/precache-manifest.35c7d56b1acf7e46e5cddad781593abf.js",
     "service-worker.js": "/reactDadJokes/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/reactDadJokes/static/css/2.b0bb7f2c.chunk.css.map",
     "static/css/main.1104f4ec.chunk.css.map": "/reactDadJokes/static/css/main.1104f4ec.chunk.css.map"
@@ -17,8 +17,8 @@
   "entrypoints": [
     "static/js/runtime-main.b29c98a8.js",
     "static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.d5c62061.chunk.js",
+    "static/js/2.9cfab172.chunk.js",
     "static/css/main.1104f4ec.chunk.css",
-    "static/js/main.56d2b060.chunk.js"
+    "static/js/main.01861cfd.chunk.js"
   ]
 }
