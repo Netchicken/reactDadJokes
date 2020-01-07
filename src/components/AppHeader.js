@@ -25,7 +25,7 @@ const AppHeader = props => {
           className="NavbarBrand"
           href="https://visioncollege.ac.nz/"
         >
-          Guess The Definition
+          Dad Jokes
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
